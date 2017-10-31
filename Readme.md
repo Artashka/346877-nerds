@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Dina Vdovenko](https://up.htmlacademy.ru/htmlcss/19/user/346877).
-* Наставник: `Неизвестно`.
+* Наставник: `SergeyPopenko`.
 
 ---
 
