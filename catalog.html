@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="utf-8">
@@ -6,22 +6,22 @@
   </head>
 
 
-
+<body>
 
 <header class="main-header">
       <div class="wrap">
         <div class="container">
 
-                <a href="index.html"><img src="logo" width="10" heigh="10">Лого</a>
+                <a href="index.html"><img src="nerds-logo.svg" width="160" alt="">Лого</a>
 
           		  <nav class="main-navigation">
           				<ul class="site-navigation">
           					<li><a href="#">Студия</a></li>
           					<li><a href="#">Клиенты</a></li>
-          					<li><a href="shop.html">Магазин</li>
+          					<li><a href="shop.html">Магазин</a></li>
           					<li><a href="#">Контакты</a></li>
           				</ul>
-                  <a href="#"><img src="logo" width="10" heigh="10">Корзина</a>
+                  <a href="#"><img src="cart-icon.svg " width="15" alt="">Корзина</a>
 
           		  </nav>
          </div>
@@ -38,16 +38,16 @@
 
 <main>
 	<div class="wrap">
-		<form>
+		<form class="filter" method="get">
 			<fieldset>
 				<legend>Стоимость</legend>
 
-				<input type="range" name="" min="0" max="15000">
+				<input type="range" name="price" min="0" max="15000">
 
-				<input type="number" name="" min="0" max="15000" id="number-min">
+				<input type="number" name="price" min="0" max="15000" id="number-min">
 				<label for="number-min">От</label>
 
-				<input type="number" name="" min="0" max="15000" id="number-max">
+				<input type="number" name="price" min="0" max="15000" id="number-max">
 				<label for="number-max">До</label>
 			</fieldset>
 				
@@ -115,7 +115,7 @@
           			<span>9 900 руб.</span>
         		</div>
         		<div>
-        			<img src="img-sedona.jpg" alt="Карточка товара - Информационный сайт для туристов Седона"  width="10">
+        			<img src="img-sedona.jpg" alt="Карточка товара - Информационный сайт для туристов Седона"  width="300">
         		</div>
 			</section>
 			</a>
@@ -128,7 +128,7 @@
 					<span>9 900 руб.</span>
 				</div>
 				<div>
-        			<img src="img-pink.jpg" alt="Карточка товара - Продуктовый лендинг приложения для iOS и Android Pink"  width="10">
+        			<img src="img-pink.jpg" alt="Карточка товара - Продуктовый лендинг приложения для iOS и Android Pink"  width="300">
         		</div>
 			</section>
 			</a>
@@ -141,7 +141,7 @@
 					<span>9 900 руб.</span>
 				</div>
 				<div>
-        			<img src="img-barbershop.jpg" alt="Карточка товара - Сайт салон красоты для мужчин Барбершоп"  width="10">
+        			<img src="img-barbershop.jpg" alt="Карточка товара - Сайт салон красоты для мужчин Барбершоп"  width="300">
         		</div>
 
 			</section>
@@ -155,7 +155,7 @@
 					<span>9 900 руб.</span>
 				</div>
 				<div>
-        			<img src="img-mishka.jpg" alt="Карточка товара - Интернет-магазин вязаных игрушек Мишка"  width="10">
+        			<img src="img-mishka.jpg" alt="Карточка товара - Интернет-магазин вязаных игрушек Мишка"  width="300">
         		</div>
 			</section>
 			</a>
@@ -168,7 +168,7 @@
 					<span>9 900 руб.</span>
 				</div>
 				<div>
-        			<img src="img-aplus.jpg" alt="Карточка товара - Лендинг курсов повышения квалификации"  width="10">
+        			<img src="img-aplus.jpg" alt="Карточка товара - Лендинг курсов повышения квалификации"  width="300">
         		</div>
 			</section>
 			</a>
@@ -181,7 +181,7 @@
 					<span>9 900 руб.</span>
 				</div>
 				<div>
-        			<img src="img-aplus.jpg" alt="Карточка товара - Промо-сайт производителя крафтового кваса"  width="10">
+        			<img src="img-aplus.jpg" alt="Карточка товара - Промо-сайт производителя крафтового кваса"  width="300">
         		</div>
 			</section>
 			</a>
@@ -191,7 +191,7 @@
 			<li><a href="#">1</a></li>
           	<li><a href="#">2</a></li>
           	<li><a href="#">3</a></li>
-          	<li><a href="#">Следущая</li>
+          	<li><a href="#">Следущая</a></li>
 		</ul>
 
 	</div>
@@ -200,14 +200,14 @@
 
 <footer class="main-footer">
 	  <div>
-	  	<img src="map.png" width="10" heigh="10">
+	  	<img src="map.png" width="10" alt="">
       </div>
   <section class="map">
       <h3>NЁRDS DESIGN STUDIO</h3>
       <p>191186, Санкт-Петербург,
       <br>ул. Б. Конюшенная, д. 19/8</p>
       <p>тел. +7 (812) 275-75-75</p>
-      <button alt="write-us">Напишите нам</button>  
+      <button value="write-us">Напишите нам</button>  
  </section>
 
  <div class="wrap">
@@ -224,3 +224,4 @@
     </div>
 </div>  
 </footer>
+</body>
