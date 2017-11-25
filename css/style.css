@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: medium;
+  color: #000000;
+
+  background-color: #ffffff;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.catalog-page {
+  color: #000000;
+  background-color: #ffffff;
+}
+  
+img{
+
+}
+
+a{
+  color: #000000;
+  list-style: none;
+ 
+}
+
+.visual-hidden{
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+
+.main-navigation{
+text-transform: uppercase;
+}
+
+.site-navigation a:hover{
+  color: #fb565a;
+}
+
+.site-navigation a:focus{
+  opasity: 0.3;
+}
+
+
+h1, .slogan-head{
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: medium;
+}
+
+h3{
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-header {
+  background-color: #eeeeee;
+}
+
+.slider {
+  background-image: url(img/slide1.png);
+  background-color: #eeeeee;
+}
+
+.filter input{
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: regular;
+}
+
+.slogan-subhead, .subhead, .who-we-are p li, .stats th{
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: regular;
+}
+
+
+.bold {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+.website{
+  width: 300px;
+  background-image: url(/img/illustration-1.jpg);
+}
+
+.app{
+  width: 300px;
+  background-image: url(img/illustration-2.jpg);
+}
+
+.presentation{
+  width: 300px;
+  background-image: url(img/illustration-3.jpg);
+}
+
+.slider-content a, .goods a, .hover span, .map button{
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: medium;
+  text-transform: uppercase;
+  color:#ffffff;
+
+}
+
+.slider-content a:hover{
+
+}
+
+
+th, .map p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: regular;
+}
+
+td {font-size: 45px;
+  line-height: 10px;
+  font-weight: bold;
+}
+
+.map b, .filter legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+   text-transform: uppercase;
+}
+
+.filters ul{
+  font-size: 14px;
+  line-height: 18px;
+  font-weight:regular;
+  text-transform: uppercase;
+  color: rgba(0 0 0 0.3);
+}
+.filters ul:hover {
+ color: rgba(0 0 0 0.36;
+}
+.filters ul:focus, .filters ul:active{
+  color: #000000;
+}
+
+
+
+.footer-slogan b{
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.footer-slogan p{
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: regular;
+}
+.hover:hover{
+
+}
+
