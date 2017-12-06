@@ -13,20 +13,19 @@
 
 <header class="main-header">
       <div class="wrap">
-        <div class="container">
+        <div class="header-container">
 
-                <a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">Лого</a>
+                <a  class="header-logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">Лого</a>
 
           		  <nav class="main-navigation">
           				<ul class="site-navigation">
-          					<li><a href="#">Студия</a></li>
-          					<li><a href="#">Клиенты</a></li>
-          					<li><a href="shop.html">Магазин</a></li>
-          					<li><a href="#">Контакты</a></li>
+          					<li><a class="menu-navigation" href="#"><span>Студия</span></a></li>
+          					<li><a class="menu-navigation" href="#"><span>Клиенты</span></a></li>
+          					<li><a class="menu-navigation active" href="catalog.html"><span>Магазин</span></a></li>
+          					<li><a class="menu-navigation" href="#"><span>Контакты</span></a></li>
           				</ul>
-                  <a href="#"><img src="cart-icon.svg " width="15" height="15" alt="Корзина">Корзина</a>
-
-          		  </nav>
+                </nav>
+                <a class="cart" href="#"><span>Корзина<span></a>
           		  <h2 class="visual-hidden"></h2>
          </div>
       </div>
@@ -34,7 +33,7 @@
 
 <section class="title">
     	<div class="wrap">
-    		<h1>Магазин готовых шаблонов</h1>
+    		<h1 class="title">Магазин готовых шаблонов</h1>
   		</div>
 </section>
 
@@ -42,9 +41,10 @@
 
 <main>
 	<div class="wrap">
+		<div class="main-filters">
 		<form class="filter" method="get">
-			<fieldset>
-				<legend>Стоимость</legend>
+			<fieldset class="fieldset price">
+				<legend class="legend-title">Стоимость</legend>
 
 				<input type="range" name="price" min="0" max="15000">
 
@@ -55,58 +55,58 @@
 				<label for="number-max">До</label>
 			</fieldset>
 				
-			<fieldset>
-				<legend>Сетка</legend>
+			<fieldset class="fieldset net">
+				<legend "legend-title">Сетка</legend>
 				<label>
-					<input type="radio" name="grid" value="adapted" checked>Aдаптивная
+					<input class="visual-hidden" type="radio" name="grid" value="adapted" checked>Aдаптивная
 				</label>
 				<label>
-					<input type="radio" name="grid" value="fixed" >Aдаптивная
+					<input class="visual-hidden" type="radio" name="grid" value="fixed" >Фиксированная
 				</label>
 				<label>
-					<input type="radio" name="grid" value="responsive" >Aдаптивная
-				</label>
-			</fieldset>
-
-			<fieldset>
-				<legend>Особенности</legend>
-				<label>
-					<input type="checkbox" name="slider" checked>Cлайдер
-				</label>
-				<label>
-					<input type="checkbox" name="advantage" >Блок преимуществ
-				</label>
-				<label>
-					<input type="checkbox" name="news" checked>Новости
-				</label>
-				<label>
-					<input type="checkbox" name="gallery">Галерея
-				</label>
-				<label>
-					<input type="checkbox" name="basket">Корзина
+					<input class="visual-hidden" type="radio" name="grid" value="responsive" >Резиновая
 				</label>
 			</fieldset>
 
-			<button type="submit" value="Показать">Показать</button>
+			<fieldset class="fieldset features">
+				<legend "legend-title">Особенности</legend>
+				<label class="features">
+					<input  class="visual-hidden" type="checkbox" name="slider" checked>Cлайдер
+				</label>
+				<label class="features">
+					<input class="visual-hidden" type="checkbox" name="advantage" >Блок преимуществ
+				</label>
+				<label class="features">
+					<input class="visual-hidden" type="checkbox" name="news" checked>Новости
+				</label >
+				<label class="features">
+					<input class="visual-hidden" type="checkbox" name="gallery">Галерея
+				</label>
+				<label class="features">
+					<input class="visual-hidden" type="checkbox" name="basket">Корзина
+				</label>
+			</fieldset>
+
+			<button class="btn btn-grey" type="submit" value="Показать">Показать</button>
 
 		</form>
 
 		<div class="goods-filter">
-			<h3>Сортировать</h3>
+			<h3 class="goodsfilter-title">Сортировать</h3>
 
 			<div class="filters">
 
-				<ul>
-					<li><a href="#">По цене</a></li>
-          			<li><a href="#">По типу</a></li>
-          			<li><a href="#">По названию</a></li>
+				<ul class="sort">
+					<li><a class="sort-type" href="#">По цене</a></li>
+          			<li><a class="sort-type" href="#">По типу</a></li>
+          			<li><a class="sort-type" href="#">По названию</a></li>
 				</ul>
-				<ul>
+				<ul class="sort">
 					<li>
-						<a href="#">По убывающей</a>
+						<a class="sort-type arrow" href="#">По убывающей</a>
 					</li>
 					<li>
-						<a href="#">По возрастающей</a>
+						<a class="sort-type arrow-down" href="#">По возрастающей</a>
 					</li>
 				</ul>
 			</div>
@@ -114,12 +114,12 @@
 			<a href="#">
 			<section class="template">
         		<div class="hover">
-         			 <h3>Sedona</h3>
+         			 <h3 class="hover-title">Sedona</h3>
           			<p>Информационный сайт для туристов</p>
-          			<span>9 900 руб.</span>
+          			<span class="btn btn-red">9 900 руб.</span>
         		</div>
         		<div>
-        			<img src="img/img-sedona.jpg" alt="Карточка товара - Информационный сайт для туристов Седона"  width="360" height="576">
+        			<img class="goods-card" src="img/img-sedona.jpg" alt="Карточка товара - Информационный сайт для туристов Седона"  width="360" height="576">
         		</div>
 			</section>
 			</a>
@@ -127,12 +127,12 @@
 			<a href="#">
 			<section class="template">
 				<div class="hover">
-					<h3>Pink App</h3>
-					<p>Продуктовый лендинг приложения для iOS и Android/<p>
-					<span>9 900 руб.</span>
+					<h3 class="hover-title">Pink App</h3>
+					<p>Продуктовый лендинг приложения для iOS и Android</p>
+					<span class="btn btn-red">9 900 руб.</span>
 				</div>
 				<div>
-        			<img src="img/img-pink.jpg" alt="Карточка товара - Продуктовый лендинг приложения для iOS и Android Pink"  width="360" height="576">
+        			<img class="goods-card" src="img/img-pink.jpg" alt="Карточка товара - Продуктовый лендинг приложения для iOS и Android Pink"  width="360" height="576">
         		</div>
 			</section>
 			</a>
@@ -140,12 +140,12 @@
 			<a href="#">
 			<section class="template">
 				<div class="hover">
-					<h3>Barbershop</h3>
+					<h3 class="hover-title">Barbershop</h3>
 					<p>Сайт салоны красоты. Для мужчин, да.</p>
-					<span>9 900 руб.</span>
+					<span class="btn btn-red">9 900 руб.</span>
 				</div>
 				<div>
-        			<img src="img/img-barbershop.jpg" alt="Карточка товара - Сайт салон красоты для мужчин Барбершоп"  width="360" height="576">
+        			<img class="goods-card" src="img/img-barbershop.jpg" alt="Карточка товара - Сайт салон красоты для мужчин Барбершоп"  width="360" height="576">
         		</div>
 
 			</section>
@@ -154,12 +154,12 @@
 			<a href="#">
 			<section class="template">
 				<div class="hover">
-					<h3>Mishka</h3>
-					<p>Интернет-магазин вязаных игрушек/p>
-					<span>9 900 руб.</span>
+					<h3 class="hover-title">Mishka</h3>
+					<p>Интернет-магазин вязаных игрушек</p>
+					<span class="btn btn-red">9 900 руб.</span>
 				</div>
 				<div>
-        			<img src="img/img-mishka.jpg" alt="Карточка товара - Интернет-магазин вязаных игрушек Мишка" width="360" height="576">
+        			<img class="goods-card" src="img/img-mishka.jpg" alt="Карточка товара - Интернет-магазин вязаных игрушек Мишка" width="360" height="576">
         		</div>
 			</section>
 			</a>
@@ -167,12 +167,12 @@
 			<a href="#">
 			<section class="template">
 				<div class="hover">
-					<h3>A Plus</h3>
-					<p>Лендинг курсов повышения квалификации/p>
-					<span>9 900 руб.</span>
+					<h3 class="hover-title">A Plus</h3>
+					<p>Лендинг курсов повышения квалификации</p>
+					<span class="btn btn-red">9 900 руб.</span>
 				</div>
 				<div>
-        			<img src="img/img-aplus.jpg" alt="Карточка товара - Лендинг курсов повышения квалификации"  width="360" height="576">
+        			<img class="goods-card" src="img/img-aplus.jpg" alt="Карточка товара - Лендинг курсов повышения квалификации"  width="360" height="576">
         		</div>
 			</section>
 			</a>
@@ -180,21 +180,22 @@
 			<a href="#">
 			<section class="template">
 				<div class="hover">
-					<h3>Кваст</h3>
-					<p>Промо-сайт производителя крафтового кваса/p>
-					<span>9 900 руб.</span>
+					<h3 class="hover-title">Кваст</h3>
+					<p>Промо-сайт производителя крафтового кваса</p>
+					<span class="btn btn-red">9 900 руб.</span>
 				</div>
 				<div>
-        			<img src="img/img-aplus.jpg" alt="Карточка товара - Промо-сайт производителя крафтового кваса"  width="360" height="576">
+        			<img class="goods-card" src="img/img-aplus.jpg" alt="Карточка товара - Промо-сайт производителя крафтового кваса"  width="360" height="576">
 			</section>
 			</a>
 		</div>
+		</div>
 
-		<ul>
-			<li><a href="#">1</a></li>
-          	<li><a href="#">2</a></li>
-          	<li><a href="#">3</a></li>
-          	<li><a href="#">Следущая</a></li>
+		<ul class="pages">
+			<li><a class="page-number btn btn-grey btn-grey-small active" href="#"><span>1</span></a></li>
+          	<li><a class="page-number btn btn-grey btn-grey-small" href="#"><span>2</span></a></li>
+          	<li><a class="page-number btn btn-grey btn-grey-small" href="#"><span>3</span></a></li>
+          	<li><a class="page-number btn btn-grey" href="#">Следущая</a></li>
 		</ul>
 
 	</div>
@@ -202,27 +203,27 @@
 
 
 <footer class="main-footer">
-	  <div>
-	  	<img src="img/map.jpg" width="1440" height="416"  alt="карта">
-      </div>
-  <section class="map">
-      <h3>NЁRDS DESIGN STUDIO</h3>
-      <p>191186, Санкт-Петербург,
-      <br>ул. Б. Конюшенная, д. 19/8</p>
-      <p>тел. +7 (812) 275-75-75</p>
-      <button value="write-us">Напишите нам</button>  
- </section>
+  <div class="wrap">
+    <div class="map">
+      <section class="contacts">
+        <b class="contacts-title">NЁRDS DESIGN STUDIO</b>
+        <p class="adress">191186, Санкт-Петербург,
+         <br>ул. Б. Конюшенная, д. 19/8</p>
+         <p>тел. +7 (812) 275-75-75</p>
+        <button class="btn btn-red btn-contacts" value="write-us">Напишите нам</button>  
+      </section>
+    </div>
 
- <div class="wrap">
-    <div class="container">
+
+    <div class="social-container">
   		 <ul class="social">
-  			 <li><a href="#">Вконтакте</a></li>
-  			 <li><a href="#">фейсбук</a></li>
-  			 <li><a href="#">Инстаграм</a></li>
+  			 <li><a  class="social-icon kontakt" href="#">Вконтакте</a></li>
+  			 <li><a  class="social-icon facebook" href="#">фейсбук</a></li>
+  			 <li><a  class="social-icon instagram" href="#">Инстаграм</a></li>
   		 </ul>
-       <div class="footer-slogan">
-          <b>Давайте дружить, это выгодно!</b>
-          <p>Скадка 10% для друзей из социальных сетей.</p>
+       <div class="footer-text">
+          <b class="footer-slogan">Давайте дружить, это выгодно!</b>
+          <p class="social-promo">Скадка 10% для друзей из социальных сетей.</p>
        </div>
     </div>
 </div>  
@@ -231,17 +232,19 @@
 <div class="popup">
    <form class="write-us">
  	    <p> Напишите нам</p>
- 		<label>Ваше имя:
-			<input type="text" name="username" placeholder="Представьтесь, пожалуйста"> 
-		</label>
-		<label>Ваш е-mail:
-			<input type="email" name="useremail" placeholder="Для отправки ответа">
-		</label>
-		<label>Текст письма:
-			<textarea name="letter-text" rows="10" cols="50" placeholder="В свободной форме"></textarea>
+ 	    <div class="name-email">
+ 		   <label >Ваше имя:</label>
+			  <input  type="text" name="username" placeholder="Представьтесь, пожалуйста"> 
+		   
+		   <label >Ваш е-mail: </label>
+			  <input type="email" name="useremail" placeholder="Для отправки ответа">
+		  
+	    </div>
+		<label >Текст письма:</label>
+			<textarea  name="letter-text" rows="10" cols="50" placeholder="В свободной форме"></textarea>
 
-		</label>
-		<button type="submit" value="Отправить">Отправть</button>
+		
+		<button class="btn btn-red btn-write-us" type="submit" value="Отправить">Отправить</button>
  	</form>
 </div>
 </body>
