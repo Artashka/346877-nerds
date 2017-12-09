@@ -73,34 +73,35 @@
 				
 			<fieldset class="fieldset fieldset-net">
 				<legend class="legend-title">Сетка:</legend>
-				<label class="net-list">
-					<input class="visual-hidden" type="radio" name="grid" value="adapted" checked>Aдаптивная
-				</label>
-				<label class="net-list">
-					<input class="visual-hidden" type="radio" name="grid" value="fixed" >Фиксированная
-				</label>
-				<label class="net-list">
-					<input class="visual-hidden" type="radio" name="grid" value="responsive">Резиновая
-				</label>
+				<input class="visual-hidden" type="radio" name="grid" value="adapted" id="grid-adapt" checked>
+				<label for="grid-adapt" class="net-list">Aдаптивная</label>
+					
+				<input class="visual-hidden" type="radio" name="grid" value="fixed" id="grid-fix">
+				<label for="grid-fix" class="net-list">Фиксированная</label>
+					
+				<input class="visual-hidden" type="radio" name="grid" value="responsive" id="grid-elastic">
+				<label for="grid-elastic" class="net-list">Резиновая</label>
+					
+				
 			</fieldset>
 
 			<fieldset class="fieldset fieldset-features">
 				<legend class="legend-title">Особенности:</legend>
-				<label class="features">
-					<input  class="visual-hidden checked" type="checkbox" name="slider" checked>Cлайдер
-				</label>
-				<label class="features">
-					<input class="visual-hidden" type="checkbox" name="advantage" >Блок преимуществ
-				</label>
-				<label class="features">
-					<input class="visual-hidden checked" type="checkbox" name="news" checked>Новости
-				</label >
-				<label class="features">
-					<input class="visual-hidden" type="checkbox" name="gallery">Галерея
-				</label>
-				<label class="features">
-					<input class="visual-hidden" type="checkbox" name="basket">Корзина
-				</label>
+				<input  class="visual-hidden checked" type="checkbox" name="slider" checked>
+				<label class="features">Cлайдер</label>
+					
+				<input class="visual-hidden" type="checkbox" name="advantage" >
+				<label class="features">Блок преимуществ</label>
+					
+				<input class="visual-hidden checked" type="checkbox" name="news" checked>
+				<label class="features">Новости</label >
+					
+				<input class="visual-hidden" type="checkbox" name="gallery">
+				<label class="features">Галерея</label>
+					
+				<input class="visual-hidden" type="checkbox" name="basket">
+				<label class="features">Корзина</label>
+		
 			</fieldset>
 
 			<button class="btn btn-grey" type="submit" value="Показать">Показать</button>
@@ -118,7 +119,7 @@
 				</ul>
 				<ul class="sort">
 					<li>
-						<a class="sort-type arrow active" href="#">По убывающей</a>
+						<a class="sort-type active arrow" href="#">По убывающей</a>
 					</li>
 					<li>
 						<a class="sort-type arrow arrow-down" href="#">По возрастающей</a>
@@ -255,22 +256,20 @@
 
 <div class="popup">
    <form class="write-us">
- 	    <p class="write-us-title"> Напишите нам</p>
- 	    <div class="name-email">
- 		   <div>
- 		   	<label class="name-email-title">Ваше имя:</label>
-			  <input  type="text" name="username" placeholder="Представьтесь, пожалуйста"> 
-		   </div>
-		   <div>
-		   <label class="name-email-title" >Ваш е-mail: </label>
-			  <input type="email" name="useremail" placeholder="Для отправки ответа">
-			</div>
-	    </div>
-		<label >Текст письма:</label>
-			<textarea  name="letter-text" rows="5" cols="50" placeholder="В свободной форме"></textarea>
-
-		
-		<button class="btn btn-red btn-write-us" type="submit" value="Отправить">Отправить</button>
- 	</form>
+      <p class="write-us-title"> Напишите нам</p>
+      <div class="name-email">
+       <div>
+        <label class="name-email-title">Ваше имя:</label>
+           <input pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)" type="text" name="username" placeholder="Представьтесь, пожалуйста"> 
+       </div>
+       <div>
+       <label class="name-email-title" >Ваш е-mail: </label>
+          <input type="email" name="useremail" placeholder="Для отправки ответа">
+      </div>
+      </div>
+    <label >Текст письма:</label>
+      <textarea  name="letter-text" rows="5" cols="50" placeholder="В свободной форме"></textarea>
+    <button class="btn btn-red btn-write-us" type="submit" value="Отправить">Отправить</button>
+  </form>
 </div>
 </body>

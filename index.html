@@ -32,30 +32,32 @@
  <main>
    <section class=slider>
      <div class="wrap">
+
+         <div class="points">
+                 <input class="slide-conrol" type="radio" name="slide" id="product1"  checked>
+                 <input class="slide-conrol" type="radio" name="slide" id="product2">
+                 <input class="slide-conrol" type="radio" name="slide" id="product3">
+            <div class="slider-controls"> 
+              <label for="product1" class="slide-point"></label>
+              <label for="product2" class="slide-point"></label>
+              <label for="product3" class="slide-point"></label>
+           </div> 
+             
+         </div>
+
   		  <div class="slide1">
            <div class="slider-content">
-  			     <p class="slogan-head"> Долго, дорого, скрупулезно. </p>
+  			     <p class="slogan-head"> Долго, дорого,<br> скрупулезно. </p>
   			     <p class="slogan-subhead">Математически выверенный дизайн <br>для вашего сайта или мобильного приложения. </p>
  			       <a class="btn btn-red btn-big" href="#"><span>Узнать больше</span></a>
-
            </div>
-           <div class="points">
-              <label class="slide-point">
-                <input class="visual-hidden" type="radio" name="slide" id="product1">
-              </label>
-              <label class="slide-point">
-                <input class="visual-hidden" type="radio" name="slide" id="product2" checked>
-              </label>
-              <label class="slide-point">
-                <input class="visual-hidden" type="radio" name="slide" id="product3">
-              </label>
-          </div>
+           
         </div>
 
         <div class="slide2">
            <div class="slider-content">
-             <p class="slogan-head"> Любим математику как никто другой </p>
-             <p class="slogan-subhead">Никакого креатива, только математические формулы для расчета идеальных пропорций. </p>
+             <p class="slogan-head"> Любим математику<br> как никто другой </p>
+             <p class="slogan-subhead">Никакого креатива, только математические формулы<br> для расчета идеальных пропорций. </p>
              <a class="btn btn-red btn-big" href="#"><span>Узнать больше</span></a>
 
            </div>     
@@ -64,7 +66,7 @@
         <div class="slide3">
            <div class="slider-content">
              <p class="slogan-head"> Только ночь,<br>только хардкор </p>
-             <p class="slogan-subhead">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается. </p>
+             <p class="slogan-subhead">Работать днем, как все? Мы против этого.<br> Ближе к полуночи работа только начинается. </p>
              <a class="btn btn-red btn-big" href="#"><span>Узнать больше</span></a>
            </div>
         </div>
@@ -113,6 +115,7 @@
         </div>
 
         <div class="stats">
+          <p class="stats-image"><img src="img/nerds-illustration.png"></p>
           <p class="stats-title"> с 2004 года Любим точность во всем:</p>
           <table class="stats-table"> 
             <tr>
@@ -195,6 +198,25 @@
     </div>
   </div>
 </footer>
+
+<div class="popup">
+   <form class="write-us">
+      <p class="write-us-title"> Напишите нам</p>
+      <div class="name-email">
+       <div>
+        <label class="name-email-title">Ваше имя:</label>
+           <input pattern="(^[a-zа-яA-ZА-Я][a-zа-яA-ZА-Я0-9-_\.\s]{1,20}$)" type="text" name="username" placeholder="Представьтесь, пожалуйста"> 
+       </div>
+       <div>
+       <label class="name-email-title" >Ваш е-mail: </label>
+          <input type="email" name="useremail" placeholder="Для отправки ответа">
+      </div>
+      </div>
+    <label >Текст письма:</label>
+      <textarea  name="letter-text" rows="5" cols="50" placeholder="В свободной форме"></textarea>
+    <button class="btn btn-red btn-write-us" type="submit" value="Отправить">Отправить</button>
+  </form>
+</div>
 </body>
 </html>
 
