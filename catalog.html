@@ -17,16 +17,16 @@
 
                 <a  class="header-logo" href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип Нердс">Лого</a>
 
-          		  <nav class="main-navigation">
-          				<ul class="site-navigation">
-          					<li><a class="menu-navigation" href="#"><span>Студия</span></a></li>
-          					<li><a class="menu-navigation" href="#"><span>Клиенты</span></a></li>
-          					<li><a class="menu-navigation active" href="catalog.html"><span>Магазин</span></a></li>
-          					<li><a class="menu-navigation" href="#"><span>Контакты</span></a></li>
-          				</ul>
+                <nav class="main-navigation">
+                  <ul class="site-navigation">
+                    <li><a class="menu-navigation" href="#"><span>Студия</span></a></li>
+                    <li><a class="menu-navigation" href="#"><span>Клиенты</span></a></li>
+                    <li><a class="menu-navigation active" href="catalog.html"><span>Магазин</span></a></li>
+                    <li><a class="menu-navigation" href="#"><span>Контакты</span></a></li>
+                  </ul>
                 </nav>
                 <a class="cart" href="#"><span>Корзина<span></a>
-          		  <h2 class="visual-hidden"></h2>
+                <h2 class="visual-hidden"></h2>
          </div>
       </div>
 </header>
@@ -42,42 +42,58 @@
 <main>
 	<div class="wrap">
 		<div class="main-filters">
-		<form class="filter" method="get">
+		<form action="form.php" method="GET">
+
 			<fieldset class="fieldset price">
-				<legend class="legend-title">Стоимость</legend>
 
-				<input type="range" name="price" min="0" max="15000">
-
-				<input type="number" name="price" min="0" max="15000" id="number-min">
-				<label for="number-min">От</label>
-
-				<input type="number" name="price" min="0" max="15000" id="number-max">
-				<label for="number-max">До</label>
+				<legend class="legend-title">Стоимость:</legend>
+            
+									
+					            <div class="range-filter">
+									<div class="range-controls">
+						                <div class="scale">
+						           		     <div class="bar" style="margin-left: 7%; width: 65%"></div>                  
+					          		    </div>
+					          				 <div class="toggle toggle-min"></div>
+					         				 <div class="toggle toggle-max"></div>
+					        		</div>
+									
+									<div class="price-controls">
+										<label class="min-price" for="number-min">OT
+											<input type="text" name="min-price" value="0" id="number-min">
+										</label>
+									
+										<label class="max-price" for="number-max">ДО
+											<input type="text" name="max-price" value="15000" id="number-max">
+										</label>
+									</div>
+								</div>
+							
 			</fieldset>
 				
-			<fieldset class="fieldset net">
-				<legend "legend-title">Сетка</legend>
-				<label>
+			<fieldset class="fieldset fieldset-net">
+				<legend class="legend-title">Сетка:</legend>
+				<label class="net-list">
 					<input class="visual-hidden" type="radio" name="grid" value="adapted" checked>Aдаптивная
 				</label>
-				<label>
+				<label class="net-list">
 					<input class="visual-hidden" type="radio" name="grid" value="fixed" >Фиксированная
 				</label>
-				<label>
-					<input class="visual-hidden" type="radio" name="grid" value="responsive" >Резиновая
+				<label class="net-list">
+					<input class="visual-hidden" type="radio" name="grid" value="responsive">Резиновая
 				</label>
 			</fieldset>
 
-			<fieldset class="fieldset features">
-				<legend "legend-title">Особенности</legend>
+			<fieldset class="fieldset fieldset-features">
+				<legend class="legend-title">Особенности:</legend>
 				<label class="features">
-					<input  class="visual-hidden" type="checkbox" name="slider" checked>Cлайдер
+					<input  class="visual-hidden checked" type="checkbox" name="slider" checked>Cлайдер
 				</label>
 				<label class="features">
 					<input class="visual-hidden" type="checkbox" name="advantage" >Блок преимуществ
 				</label>
 				<label class="features">
-					<input class="visual-hidden" type="checkbox" name="news" checked>Новости
+					<input class="visual-hidden checked" type="checkbox" name="news" checked>Новости
 				</label >
 				<label class="features">
 					<input class="visual-hidden" type="checkbox" name="gallery">Галерея
@@ -88,13 +104,12 @@
 			</fieldset>
 
 			<button class="btn btn-grey" type="submit" value="Показать">Показать</button>
-
 		</form>
 
-		<div class="goods-filter">
-			<h3 class="goodsfilter-title">Сортировать</h3>
+	<div class="goods-filter">	
 
 			<div class="filters">
+				<h3 class="goodsfilter-title">Сортировать</h3>
 
 				<ul class="sort">
 					<li><a class="sort-type" href="#">По цене</a></li>
@@ -106,11 +121,13 @@
 						<a class="sort-type arrow" href="#">По убывающей</a>
 					</li>
 					<li>
-						<a class="sort-type arrow-down" href="#">По возрастающей</a>
+						<a class="sort-type arrow arrow-down" href="#">По возрастающей</a>
 					</li>
 				</ul>
 			</div>
 
+
+        <div class="cards">
 			<a href="#">
 			<section class="template">
         		<div class="hover">
@@ -141,7 +158,7 @@
 			<section class="template">
 				<div class="hover">
 					<h3 class="hover-title">Barbershop</h3>
-					<p>Сайт салоны красоты. Для мужчин, да.</p>
+					<p>Сайт салоны красоты.<br> Для мужчин, да.</p>
 					<span class="btn btn-red">9 900 руб.</span>
 				</div>
 				<div>
@@ -155,7 +172,7 @@
 			<section class="template">
 				<div class="hover">
 					<h3 class="hover-title">Mishka</h3>
-					<p>Интернет-магазин вязаных игрушек</p>
+					<p>Интернет-магазин <br>вязаных игрушек</p>
 					<span class="btn btn-red">9 900 руб.</span>
 				</div>
 				<div>
@@ -185,11 +202,13 @@
 					<span class="btn btn-red">9 900 руб.</span>
 				</div>
 				<div>
-        			<img class="goods-card" src="img/img-aplus.jpg" alt="Карточка товара - Промо-сайт производителя крафтового кваса"  width="360" height="576">
+        			<img class="goods-card" src="img/img-kvast.jpg" alt="Карточка товара - Промо-сайт производителя крафтового кваса"  width="360" height="576">
 			</section>
 			</a>
 		</div>
 		</div>
+	</div>
+
 
 		<ul class="pages">
 			<li><a class="page-number btn btn-grey btn-grey-small active" href="#"><span>1</span></a></li>
@@ -203,45 +222,51 @@
 
 
 <footer class="main-footer">
-  <div class="wrap">
     <div class="map">
+      <div class="wrap">
       <section class="contacts">
         <b class="contacts-title">NЁRDS DESIGN STUDIO</b>
         <p class="adress">191186, Санкт-Петербург,
          <br>ул. Б. Конюшенная, д. 19/8</p>
-         <p>тел. +7 (812) 275-75-75</p>
+         <p class="tel">тел. +7 (812) 275-75-75</p>
         <button class="btn btn-red btn-contacts" value="write-us">Напишите нам</button>  
       </section>
     </div>
+  </div>
 
-
-    <div class="social-container">
-  		 <ul class="social">
-  			 <li><a  class="social-icon kontakt" href="#">Вконтакте</a></li>
-  			 <li><a  class="social-icon facebook" href="#">фейсбук</a></li>
-  			 <li><a  class="social-icon instagram" href="#">Инстаграм</a></li>
-  		 </ul>
+    
+    <div class="wrap">
+      <div class="social-container">
+       <ul class="social">
+         <li><a  class="social-icon kontakt" href="#">Вконтакте</a></li>
+         <li><a  class="social-icon facebook" href="#">фейсбук</a></li>
+         <li><a  class="social-icon instagram" href="#">Инстаграм</a></li>
+       </ul>
        <div class="footer-text">
           <b class="footer-slogan">Давайте дружить, это выгодно!</b>
           <p class="social-promo">Скадка 10% для друзей из социальных сетей.</p>
        </div>
     </div>
+  </div>
+
 </div>  
 </footer>
 
 <div class="popup">
    <form class="write-us">
- 	    <p> Напишите нам</p>
+ 	    <p class="write-us-title"> Напишите нам</p>
  	    <div class="name-email">
- 		   <label >Ваше имя:</label>
+ 		   <div>
+ 		   	<label class="name-email-title">Ваше имя:</label>
 			  <input  type="text" name="username" placeholder="Представьтесь, пожалуйста"> 
-		   
-		   <label >Ваш е-mail: </label>
+		   </div>
+		   <div>
+		   <label class="name-email-title" >Ваш е-mail: </label>
 			  <input type="email" name="useremail" placeholder="Для отправки ответа">
-		  
+			</div>
 	    </div>
 		<label >Текст письма:</label>
-			<textarea  name="letter-text" rows="10" cols="50" placeholder="В свободной форме"></textarea>
+			<textarea  name="letter-text" rows="5" cols="50" placeholder="В свободной форме"></textarea>
 
 		
 		<button class="btn btn-red btn-write-us" type="submit" value="Отправить">Отправить</button>
